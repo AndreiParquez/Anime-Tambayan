@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="./css/episode.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="logo"> <h3>Anime Tambayan</h3></div>
+        <nav> 
+         
+                <ul>
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+
+        </nav>
+        <div class="leftbar">
+            <div id="search-div">
+                <form action="./search.html" method="GET">
+                    <input type="text" name="query" id="query" placeholder="Search Anime..." required />
+                    <button name="search" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            
+        </div>
+        <button><i class="fa-solid fa-user"></i></button>
+    </header>
+
+    <div id="load">
+        <img src="./static/loading2.gif" alt="Loading..." />
+    </div>
+
+    <!-- Error Page -->
+    <div class=container id=error-page style="display: none;">
+        <h6>Oops! Something Went Wrong</h6>
+        <p>We're sorry, but it seems that something went wrong. Try refreshing the page or try again later.
+        <p>
+        <p id=error-desc>
+    </div>
+    <!-- Error Page -->
+
+    <div id="main-section" style="opacity: 0;display: none;">
+        <section id="vid-sec">
+            <div class="divox">
+            <div id="vid-div">
+                <div id="video">
+                    <iframe id="AnimeDexFrame" src="" style="border: 0px #ffffff none" scrolling="no" frameborder="0"
+                        marginheight="0px" marginwidth="0px" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div id="server_main">
+                <div class="status">
+                    <div class="scontent">
+                        You are watching <b id="ep-name">
+                            <h1>{{ title }}</h1>
+                        </b>If
+                        current server doesn't work please try other servers
+                        beside.
+                    </div>
+                </div>
+
+                <div class="server">
+                    <div class="stitle">
+                        <i class="fa-solid fa-video"></i>
+
+                        Servers:
+                    </div>
+                    <div id="serversbtn" class="slist"></div>
+                </div>
+
+                <a id="showdl" onclick="showDownload()"><i class="fa fa-download"></i>Download</a>
+                <div id="dldiv" class="dldiv">
+
+                    <div class="server">
+                        <div class="stitle">
+                            <i class="fa fa-closed-captioning"></i>Quality:
+                        </div>
+                        <div id="dllinks" class="slist">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+    </div>
+    <footer>
+        <div>
+        </div>
+    </footer>
+    
+
+    <script src="./js/episode.js"></script>
+    <script src="https://kit.fontawesome.com/45cb819601.js" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-BHQX4066ZV");
+    </script>
+</body>
+
+</html>

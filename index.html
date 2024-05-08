@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <link href="./css/index.css" rel="stylesheet" />
+    <style>
+        
+  .background {
+    position: absolute;
+    top: -230px;
+    left: -50px;
+    width: 110%;
+    height: 250%;
+    background-image: url('cover.png');
+    background-size: cover;
+    animation: moveBackground 20s linear infinite;
+    transform: rotate(-10deg); /* Adjust rotation here */
+    z-index: -2; /* Ensure the background is behind other content */
+  }
+  .vignette {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.721) 0%, rgba(0, 0, 0, 0.967) 100%);
+  }
+  .cover{
+    overflow: hidden;
+  }
+  .bg{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+  }
+  @keyframes moveBackground {
+    0% {
+      transform: translateY(0px) rotate(-10deg);
+    }
+    100% {
+      transform: translateY(-400px) rotate(-10deg);
+    }
+  }
+    </style>
+</head>
+
+<body>
+   
+    
+
+  <header>
+    <header>
+        <div class="logo"> <h3>Anime Tambayan</h3></div>
+        <nav> 
+         
+                <ul>
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+
+        </nav>
+        <div class="leftbar">
+            <div id="search-div">
+                <form action="./search.html" method="GET">
+                    <input type="text" name="query" id="query" placeholder="Search Anime..." required />
+                    <button name="search" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            
+        </div>
+        <button><i class="fa-solid fa-user"></i></button>
+        
+      </header>
+  </header>
+        <div class="cover">
+            <div class="bg">
+            <div class="vignette"></div>
+            <div class="background"></div></div>
+            <div class="katana">
+                <img src="./static/p.png"><div><h1>Anime Tambayan</h1><p>Watch your favorite anime with no ads</p></div>
+            </div>
+            
+
+        </div>
+        
+     
+
+    <section>
+        <div class="divox">
+           
+                
+            <h2 id="latest">Most Popular</h2>
+            <div id="latest2" class="popularg"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="divox">
+            <h2 id="latest">Recent Release</h2>
+            <div id="latest2" class="recento"></div>
+        </div>
+    </section>
+    <div id="load">
+        <img src="./static/loading2.gif" alt="Loading..." />
+        <p>Please wait...</p>
+    </div>
+
+    <footer>
+        <div>
+
+        </div>
+    </footer>
+
+
+    <script src="./js/index.js"></script>
+    <script async src="https://kit.fontawesome.com/45cb819601.js" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-BHQX4066ZV");
+    </script>
+</body>
+
+</html>

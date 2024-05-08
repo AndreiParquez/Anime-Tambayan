@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'CustomFont'; /* Name your font */
+    src: url('Death Note.ttf');
+  }
+  @font-face {
+    font-family: 'c'; /* Name your font */
+    src: url('c.ttf');
+  }
+  @font-face {
+    font-family: 'p'; /* Name your font */
+    src: url('ninja-naruto.regular.ttf');
+  }
+body{
+background-color: rgb(24, 24, 24);
+color: aliceblue;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+h3{
+    color: #ffffff;
+    font-family: 'CustomFont';
+    margin-top: 12px;
+  }
+header{
+    position: fixed;
+    z-index: 5;
+
+    top: 0;
+width: 100%;
+    height: 50px;
+    background-color:rgba(16, 15, 15, 0.732) ;
+    display: flex;
+   
+  }
+.logo{
+    width: 200px;
+    margin-left: 120px;
+}
+
+nav {
+    width: 700px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+   
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'c';
+    font-size: 14px;
+    position: relative;
+}
+
+nav li a::after {
+	content: '';
+	position: absolute;
+	width: 40%; 
+	height: 2px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #2f2f2f;
+	transition: width 0.3s; 
+	border-radius: 2px;
+}
+nav li a:hover::after {
+	width: 60%; 
+	background-color:#0372aa;
+  
+}
+nav li.active a::after {
+	background-color: #0372aa;
+
+}
+
+
+span{
+    font-family: 'Death Note';
+    font-size: 130px;
+    text-shadow: 1px 1px 2px #0372aa;
+    font-weight: bold;
+}
+p{
+    color: #0372aa;
+    font-size: 16px;
+    font-family: 'c';
+    position: relative;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    
+}
+
+
+nav ul li a:hover {
+    background-color: #090909;
+    color: #0372aa;
+}
+.divox{
+    margin-top: 30px;
+    padding: 0px;
+    width: 70%;
+    margin-left: 19%;
+    z-index: 1;
+}
+.cover{
+    height:390px;
+    background-color: rgba(0, 0, 0, 0.13);
+    text-align: center;
+    overflow-x: hidden;
+    
+
+}
+.katana{
+    display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: center;
+}
+h1{
+    font-size: 60px;
+    font-family: 'p';
+    margin-bottom: 0;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    margin-top: 70px;
+}
+.katana img{
+    height: 200px;
+    text-shadow: 1px 1px 2px #ffff;
+    margin-top: 100px;
+    filter:drop-shadow(4px 4px 4px rgb(0, 39, 98)); 
+    
+}
+#query{
+    background-color: rgba(16, 15, 15, 0.732);
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 30px;
+    width: 220px;
+    color: #ffffff;
+ 
+}
+i{
+    margin-top: 4px;
+}
+#search-div{
+    text-align: right;
+    padding-right: 50px;
+    
+}
+#search-div button{
+    background-color:rgba(16, 15, 15, 0.732);
+    border:none;
+    height: 40px;
+    width: 40px;
+    color: #0372aa;
+    font-size: 20px;
+    margin-top: 5px;
+
+}
+button{
+    color: #0372aa;
+    height: 40px;
+    width: 40px;
+    background-color:rgba(16, 15, 15, 0.732);
+    border: none;
+    font-size: 20px;
+    margin-top: 5px;
+}
+h3{
+    font-size: 18px;
+}
+section {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    height: fit-content;
+}
+.poster{
+    box-sizing: border-box;
+    text-align: center;
+    display: inline;
+    padding: 20px;
+    margin: 0px;
+    overflow: visible;
+    margin-top: 0px;
+    background-color: blue;
+    border-radius: 6px;
+}
+.la-anime{
+    display: inline-block;
+    padding: 0px;
+    margin: 0px 5px;
+    margin-bottom: 20px;
+    position: relative;
+    width: calc(50% - 20px);
+    max-width: 190px;
+    background-color: #0372aa;
+    border-radius: 6px;
+    box-shadow: rgb(0, 24, 52) 0px 3px 8px;
+    
+}
+section img {
+    box-sizing: border-box;
+    width: 210px; /* Desired width */
+    height: 340px; /* Desired height */
+    object-fit: cover; /* Ensure image covers the specified dimensions */
+    border: 5px solid white;
+    
+   
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+}
+
+.shadow {
+    box-shadow: inset 0px -100px 50px -50px rgba(32, 33, 37, 0.788);
+    position: relative;
+    height: 200px;
+    z-index: 1;
+}
+
+#shadow1 {
+   
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 3;
+}
+
+#shadow2 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.shadow img {
+    border: none;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    max-width: unset;
+    z-index: 1;
+    border-radius: 6px;
+}
+
+.la-details {
+    background-color: rgba(31, 30, 29, 0.8);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px;
+    overflow: hidden;
+    height: 40px;
+}
+.la-details h3 {
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 8px;
+    height: fit-content;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    list-style: none;
+    box-sizing: border-box;
+    height: 37px;
+ 
+    overflow: hidden;
+}
+
+.dubb{
+    color: rgb(0, 0, 0);
+    background-color: azure;
+    width: 31px;
+    text-align: center;
+    margin: 2px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 4px;
+}
+.dubb2{
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(252, 0, 0);
+    width: 31px;
+    border-radius: 4px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 2px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px;
+}
+#load{
+    text-align: center;
+}
+#load img{
+    height: 130px;
+}

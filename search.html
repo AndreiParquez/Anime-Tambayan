@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <link href="./css/search.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="head-div">
+        <div class="logo"> <h3>Anime Tambayan</h3></div>
+        <nav> 
+         
+                <ul>
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+
+        </nav>
+        <div class="leftbar">
+            <div id="search-div">
+                <form action="./search.html" method="GET">
+                    <input type="text" name="query" id="query" placeholder="Search Anime..." required />
+                    <button name="search" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            
+        </div>
+        <button><i class="fa-solid fa-user"></i></button>
+    </header>
+
+    <!-- Error Page -->
+    <div class=container id=error-page style="display: none;">
+        <h1>Oops! Something Went Wrong</h1>
+        <p>We're sorry, but it seems that something went wrong. Try refreshing the page or try again later.
+        <p id=error-desc>
+    </div>
+    <!-- Error Page -->
+
+    <section id="main-section">
+        <div class="divox">
+            <h2 id="latest">Search Results: {{ QUERY }}</h2>
+            <div id="load">
+                <img src="./static/loading2.gif" alt="Loading..." />
+            </div>
+            <div id="latest2" style="display: none;">
+
+            </div>
+        </div>
+    </section>
+  
+    <footer>
+        <div>
+         
+        </div>
+    </footer>
+
+    <script src="./js/search.js"></script>
+    <script src="https://kit.fontawesome.com/45cb819601.js" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-BHQX4066ZV');</script>
+</body>
+
+</html>

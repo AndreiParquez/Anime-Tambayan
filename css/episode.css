@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'CustomFont'; /* Name your font */
+    src: url('Death Note.ttf');
+  }
+  @font-face {
+    font-family: 'c'; /* Name your font */
+    src: url('c.ttf');
+  }
+  @font-face {
+    font-family: 'p'; /* Name your font */
+    src: url('ninja-naruto.regular.ttf');
+  }
+body{
+background-color: rgb(24, 24, 24);
+color: aliceblue;
+margin: 0;
+padding: 0;
+}
+h3{
+    color: #ffffff;
+    font-family: 'CustomFont';
+    margin-top: 12px;
+  }
+header{
+    position: fixed;
+    z-index: 5;
+
+    top: 0;
+width: 100%;
+    height: 50px;
+    background-color:rgba(16, 15, 15, 0.732) ;
+    display: flex;
+   
+  }
+.logo{
+    width: 200px;
+    margin-left: 120px;
+}
+
+nav {
+    width: 700px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+   
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'c';
+    font-size: 14px;
+    position: relative;
+}
+
+nav li a::after {
+	content: '';
+	position: absolute;
+	width: 40%; 
+	height: 2px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #2f2f2f;
+	transition: width 0.3s; 
+	border-radius: 2px;
+}
+nav li a:hover::after {
+	width: 60%; 
+	background-color:#0372aa;
+  
+}
+nav li.active a::after {
+	background-color: #0372aa;
+
+}
+
+
+span{
+    font-family: 'Death Note';
+    font-size: 130px;
+    text-shadow: 1px 1px 2px #0372aa;
+    font-weight: bold;
+}
+p{
+    color: #0372aa;
+    font-size: 16px;
+    font-family: 'c';
+    position: relative;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    
+}
+
+
+nav ul li a:hover {
+    background-color: #090909;
+    color: #0372aa;
+}
+.divox{
+    margin-top: 30px;
+    padding: 0px;
+    width: 60%;
+    margin-left: 19%;
+    text-align: center;
+}
+.cover{
+    height:390px;
+    background-color: rgba(0, 0, 0, 0.13);
+    text-align: center;
+ 
+
+}
+
+h1{
+    font-size: 60px;
+    font-family: 'p';
+    margin-bottom: 0;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    margin-top: 70px;
+}
+
+#query{
+    background-color: rgba(16, 15, 15, 0.732);
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 30px;
+    width: 220px;
+    color: #ffffff;
+ 
+}
+i{
+    margin-top: 4px;
+}
+#search-div{
+    text-align: right;
+    padding-right: 50px;
+    
+}
+#search-div button{
+    background-color:rgba(16, 15, 15, 0.732);
+    border:none;
+    height: 40px;
+    width: 40px;
+    color: #0372aa;
+    font-size: 20px;
+    margin-top: 5px;
+
+}
+button{
+    color: #0372aa;
+    height: 40px;
+    width: 40px;
+    background-color:rgba(16, 15, 15, 0.732);
+    border: none;
+    font-size: 20px;
+    margin-top: 5px;
+}
+h3{
+    font-size: 18px;
+}
+section {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    height: fit-content;
+}
+
+section img {
+    box-sizing: border-box;
+    width: 210px; /* Desired width */
+    height: 340px; /* Desired height */
+    object-fit: cover; /* Ensure image covers the specified dimensions */
+    border: 5px solid white;
+    
+   
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+}
+
+#load{
+    text-align: center;
+}
+#load img{
+    height: 130px;
+}
+#AnimeDexFrame{
+    height: 410px;
+    width: 720px;
+    margin-top: 50px;
+}
+.scontent{
+    font-family: 'c';
+    font-size: 13px;
+}
+#ep-name{
+    color: #0372aa;
+    margin-right: 10px;
+}
+.server{
+}
+.slist{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.sitem{
+    background-color: #0372aa;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 3px;
+    font-family: 'c';
+    cursor: pointer;
+    font-size: 12px;
+}
+.stitle{
+    margin-top: 30px;
+    font-family: 'c';
+}
+#showdl{
+    padding: 10px;
+    margin: 4px;
+    border-radius: 3px;
+    font-family: 'c';
+    cursor: pointer;
+    font-size: 12px;
+    color: #0372aa;
+    background-color: #ffffff;
+    margin-top: 20px;
+    position: relative;
+}
+.sobtn{
+    text-decoration: none;
+    color: #ffffff;
+}

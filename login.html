@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Background</title>
+<style>
+    @font-face {
+    font-family: 'p'; /* Name your font */
+    src: url('./css/ninja-naruto.regular.ttf');
+  }
+      @font-face {
+    font-family: 'CustomFont'; /* Name your font */
+    src: url('Death Note.ttf');
+  }
+  @font-face {
+    font-family: 'c'; /* Name your font */
+    src: url('c.ttf');
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+  }
+  .background {
+    position: absolute;
+    top: -230px;
+    left: -50px;
+    width: 110%;
+    height: 250%;
+    background-image: url('cover.png');
+    background-size: cover;
+    animation: moveBackground 20s linear infinite;
+    transform: rotate(-10deg); /* Adjust rotation here */
+    z-index: -2; /* Ensure the background is behind other content */
+  }
+  header{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+    background-color:rgba(16, 15, 15, 0.732) ;
+    padding-left: 120px;
+  }
+  .vignette {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.389) 0%, rgba(0, 0, 0, 0.967) 100%);
+  }
+  .container{
+    height: 300px;
+    width: 410px;
+    background-color: rgba(16, 15, 15, 0.795) ;
+    border-radius: 6px;
+    margin-top: 220px;
+    margin-left: 560px;
+    box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(66, 66, 66);
+  }
+  .input-field {
+    margin: 10px;
+    padding: 8px;
+    width: 55%;
+    height: 23px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(50, 49, 49);
+    color: #ffffff;
+  }
+  label{
+    color: #bfbfbf;
+    margin-left: -240px;
+    font-size: 13px;
+    position: relative;
+    text-align: left;
+  }
+  .button {
+    background-color:#0372aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;font-family: 'c';
+  }
+  .button:hover {
+    background-color: #00a2c3;
+  }
+  span{
+    color: #afafaf;
+    font-family: 'c';
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+  }
+  p{
+    color: #0372aa;
+    font-family: 'c';
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+  
+  }
+  h1{
+    color: #ffffff;
+    font-family: 'p';
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgb(112, 112, 112);
+
+  }
+  h3{
+    color: #ffffff;
+    font-family: 'CustomFont';
+    
+  }
+  @keyframes moveBackground {
+    0% {
+      transform: translateY(0px) rotate(-10deg);
+    }
+    100% {
+      transform: translateY(-400px) rotate(-10deg);
+    }
+  }
+  img{
+    height: 100px;
+    margin-top: -30px;
+  }
+  #luffy{
+    height: 150px;
+    position: absolute;
+    top:19%;
+    left: 35%;
+   
+  }
+</style>
+</head>
+<body>
+  <div class="vignette"></div>
+  <div class="background"></div>
+  <header>
+    <h3>Anime Tambayan</h3>
+  </header>
+  
+  <div class="container">
+    <img src="./static/w.png" alt="Loading..." id="luffy" />
+    <h1>Anime Tambayan</h1>
+    <p>Watch your favorite anime online</p>
+    <input type="text" class="input-field" placeholder="Username">
+    <input type="password" class="input-field" placeholder="Password">
+    <button class="button" onclick="window.location.href = 'index.html';">L O G I N</button>
+   
+  </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Watch TITLE - AnimeDex</title>
+    
+    <link href="./css/anime.css" rel="stylesheet" />
+    <style>
+        #cover {
+            background-image: url("IMG");
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"> <h3>Anime Tambayan</h3></div>
+        <nav> 
+         
+                <ul>
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+
+        </nav>
+        <div class="leftbar">
+            <div id="search-div">
+                <form action="./search.html" method="GET">
+                    <input type="text" name="query" id="query" placeholder="Search Anime..." required />
+                    <button name="search" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            
+        </div>
+        <button><i class="fa-solid fa-user"></i></button>
+    </header>
+
+    <div id="load">
+        <img src="./static/loading2.gif" alt="Loading..." />
+    </div>
+
+    <!-- Error Page -->
+    <div class=container id=error-page style="display: none;">
+        <h6>Oops! Something Went Wrong</h6>
+        <p>We're sorry, but it seems that something went wrong. Try refreshing the page or try again later.
+        <p>If the issue persists, you can contact our <a
+                href=https://github.com/TechShreyash/AnimeDexLite/issues/new>support team</a>.
+        <p id=error-desc>
+    </div>
+    <!-- Error Page -->
+
+    <div id="main-content" style="display: none;">
+        <section>
+            <div class="divox">
+            <div id="background">
+                <div id="cover"></div>
+            </div>
+
+            <div class="anime row">
+                <div class="poster col-3">
+                    <img id="poster-img" class="lzy_img" src="./static/loading1.gif" data-src="IMG" style="display: none;" />
+                </div>
+                <div class="details col-6">
+                    <h1 class="anime-title">TITLE</h1>
+                    <div class="mid" style="margin: 20px 0px">
+                        <span class="cbox">HD</span>
+                        <span class="cbox">LANG</span>
+                        <span class="dot"></span>
+                        <span class="year">TYPE</span>
+                    </div>
+                    <div id="watchh" class="mid">
+                        <a href="#watch" id="watch-btn" class="watch-btn">
+                            <i class="fa fa-play"></i> Watch Now
+                        </a>
+                    </div>
+                    <div id="overview3" class="synopsis">SYNOPSIS</div>
+                </div></div>
+                <div id="info" class="col-3">
+
+                    <div class="info-items">
+                        <span class="item-head">Other Names:</span>
+                        <span class="item-des">OTHER</span>
+                    </div>
+                    <div class="info-items">
+                        <span class="item-head">Episodes:</span>
+                        <span class="item-des">TOTAL</span>
+                    </div>
+                    <div class="info-items">
+                        <span class="item-head">Release Year:</span>
+                        <span class="item-des">YEAR</span>
+                    </div>
+                    <div class="info-items">
+                        <span class="item-head">Type:</span>
+                        <span class="item-des">TYPE</span>
+                    </div>
+                    <div class="info-items">
+                        <span class="item-head">Status:</span>
+                        <span class="item-des">STATUS</span>
+                    </div>
+
+                    <div class="info-items genre">
+                        <span class="item-head">Genres:</span> GENERES
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="watch">
+            <div class="divox">
+            <div class="divo">
+
+                <!-- Episode List Start -->
+                <div id="ep-divo-outer" class="ep-divo-outer" style="display: none;">
+                    <section>
+                        <h2>List Of Episodes:</h2>
+                        <select id="ep-upper-div" class="ep-divo-upper divo2"
+                            onchange="episodeSelectChange(this)"></select>
+                    </section>
+                    <hr>
+                    <div id="ep-lower-div" class="ep-divo-lower divo2"></div>
+                </div>
+                <!-- Episode List End -->
+            </div></div>
+        </section>
+
+        <section id="similar-div">
+            <div class="divox">
+                <h2 id="latest">Similar Animes</h2>
+                <div id="load" class="sload" style="display: none;">
+                    <img src="./static/loading2.gif" alt="Loading..." />
+                </div>
+                <div id="latest2"></div>
+            </div>
+        </section>
+    </div>
+ 
+    <footer>
+        <div>
+          
+        </div>
+    </footer>
+
+
+    <script src="./js/anime.js"></script>
+    <script src="https://kit.fontawesome.com/45cb819601.js" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-BHQX4066ZV');</script>
+</body>
+
+</html>
